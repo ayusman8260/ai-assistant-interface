@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side" id="side">
+    <button id="new" class="solid wide">New chat</button>
+    <ul id="chats" class="chats"></ul>
+    <p id="mode" class="muted small"></p>
+  </aside>
+  <section class="chat">
+    <header>
+      <button id="menu" class="ghost" aria-label="Show chats">☰</button>
+      <h1 id="title">New chat</h1>
+      <button id="export" class="ghost">Export</button>
+      <button id="delete" class="ghost">Delete</button>
+    </header>
+    <div id="log" class="log" role="log" aria-live="polite"></div>
+    <form id="form" class="composer">
+      <textarea id="input" rows="1" placeholder="Message the assistant. Enter sends, Shift+Enter adds a line." aria-label="Message"></textarea>
+      <button id="send" class="solid">Send</button>
+    </form>
+  </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
